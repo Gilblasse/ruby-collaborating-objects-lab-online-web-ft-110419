@@ -8,7 +8,7 @@ class MP3Importer
   end
   
   def files
-   files = Dir["#{@path}/*.mp3"].collect {|f| Song.new_by_filename(f[21..-1])}
+   Dir["#{@path}/*.mp3"].collect {|f| Song.new_by_filename(f[21..-1])}
   # binding.pry
   end
   
