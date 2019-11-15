@@ -8,8 +8,7 @@ class MP3Importer
   end
   
   def files
-   file = Dir["#{@path}/*.mp3"].
-    binding.pry
+   Dir["#{@path}/*.mp3"].each {|f| Song.new_by_filename(f)}
   end
   
   def import 
