@@ -1,3 +1,5 @@
+require_relative '../env.rb'
+
 class Song 
   attr_accessor :name, :artist, :genre
   @@all = []
