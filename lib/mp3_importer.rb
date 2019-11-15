@@ -8,7 +8,7 @@ class MP3Importer
   end
   
   def files
-   Dir["#{@path}/*.mp3"].each {|f| Song.new_by_filename(f)}
+   Dir["#{@path}/*.mp3"].each {|f| Song.new_by_filename(f[21..-1])}
   end
   
   def import 
