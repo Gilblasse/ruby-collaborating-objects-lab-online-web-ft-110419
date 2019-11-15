@@ -1,4 +1,5 @@
 require 'pry'
+require_relative '../env.rb'
 class MP3Importer
   attr_accessor :path
 
