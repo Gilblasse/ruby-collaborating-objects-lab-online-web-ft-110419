@@ -15,7 +15,7 @@ class Song
     artist, title, genre = file_name.split("-")
  
     song = Song.new(title.strip)
-    song.genre = genre.strip
+    song.genre = genre[0..-5].strip
     song.artist_name = artist.strip
     song
   end
